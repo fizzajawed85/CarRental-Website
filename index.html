@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Rental</title>
+    <!-- Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <!-- Google Font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <nav class="navbar navbar-expand-sm navbar-dark text-bg-light">
+        <h1 class="nav-logo p-4"><strong>CarRental</strong></h1>
+        <button
+            class="navbar-toggler d-lg-none"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#collapsibleNavId"
+            aria-controls="collapsibleNavId"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+        ></button>
+        <div class="collapse navbar-collapse" id="collapsibleNavId">
+            <ul class="navbar-nav ms-auto"> 
+                <li class="nav-item">
+                    <a class="nav-link active" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Listing</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Testimonals</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Blog</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">About</a>
+                </li> 
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contact</a>
+                </li>  
+            </ul>
+        </div>
+    </nav>
+    
+    <section class="hero-bg">
+        <div class="container">
+            <div class="row align-items-center justify-content-center">
+                <div class="col-lg-10">
+                    <div class="row mb-5">
+                        <div class="col-lg-7 intro">
+                            <h1>
+                                <strong>Rent a Car</strong>
+                                is within your finger tips
+                            </h1>
+                        </div>
+                    </div>
+                </div>
+                <form class="tripform">
+                <div class="row align-item-center background">
+                    <div class="mb-3 mb-md-0 col-md-3 ">
+                        <select name="" id="" class="custom-select form-control">
+                            <option value="">Select Type <i class="fa-solid fa-caret-down"></i></option>
+                            <option value="">Ferrari</option>
+                            <option value="">Toyota</option>
+                            <option value="">Ford</option>
+                            <option value="">Lamborghini</option>
+                        </select>
+                    </div>
+                    <div class="mb-3 mb-md-0 col-md-3">
+                        <div class="form-control-wrap">
+                          <input type="text" id="cf-3" placeholder="Pick up" class="form-control datepicker px-3">
+                          <span class="icon icon-date_range"></span>
+    
+                        </div>
+                      </div>
+                      <div class="mb-3 mb-md-0 col-md-3">
+                        <div class="form-control-wrap">
+                          <input type="text" id="cf-3" placeholder="Drop off" class="form-control datepicker px-3">
+                          <span class="icon icon-date_range"></span>
+    
+                        </div>
+                      </div>
+                      <div class="mb-3 mb-md-0 col-md-3">
+                      <input type="submit" value="Search Now" class="btn btn-primary btn-block py-3">
+                    </div>
+                </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+     <!--Works Section-->
+
+    <section class="works-section text-center py-5">
+        <div class="container">
+            <h2 class="section-title">How it Works?</h2>
+            <p class="para">Easy steps to get you started</p>
+            <div class="row mt-4">
+                <div class="col-md-4">
+                    <div class="cards shadow-sm p-4">
+                        <h1 class="mt-3 clor">01</h1>
+                        <h4 class="mt-3">Select a car</h4>
+                        <p class="para">Lorem ipsum dolor sit amet, consectetur adipiscing elit morbi hendrerit elit.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="cards shadow-sm p-4">
+                        <h1 class="mt-3 clor">02</h1>
+                        <h4 class="mt-3">Select a car</h4>
+                        <p class="para">Lorem ipsum dolor sit amet, consectetur adipiscing elit morbi hendrerit elit.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="cards shadow-sm p-4">
+                        <h1 class="mt-3 clor">03</h1>
+                        <h4 class="mt-3">Select a car</h4>
+                        <p class="para">Lorem ipsum dolor sit amet, consectetur adipiscing elit morbi hendrerit elit.</p>
+                    </div>
+                </div>
+                
+        </div>
+    </section>
+
+     <!--MeetUs Section-->
+
+     <div class="meet-section p-4">
+        <div class="meet-container">
+            <div class="content-section">
+                <div class="title">
+                    <h1>You can easily avail our promo for renting a car.</h1>
+                </div>
+                <div class="content">
+                   <p class="para">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae, explicabo iste a labore id est quas, doloremque veritatis! Provident odit pariatur dolorem quisquam, voluptatibus voluptates optio accusamus, vel quasi quidem!</p>
+                    <div class="button">
+                        <a href="#">Meet them now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="image-section">
+                <img src="./images/feature_01.png.webp" alt="">
+            </div>
+        </div>
+      </div>
+
+       <!--Cars Section-->
+
+    <section class="container mt-5 mb-5 pt-5 pb-5">
+        <h2 class="section-title">Car Listings</h2>
+        <p class="para">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+    </section>
+
+    <div class="container mt-5 bg">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="./images/car_1.jpg.webp" class="card-img-top">
+                    <div class="para p-2">$389.00/day</div>
+                    <div class="card-body">
+                        <h5 class="category">Mitsubishi Pajero</h5>
+                        <p class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </p>
+                        <p class="para">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos eos at eum, voluptatem quibusdam.</p>  
+                        <a href="#" class="btn btn-rent">Rent Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="./images/car_6.jpg.webp" class="card-img-top" >
+                    <div class="para p-2">$389.00/day</div>
+                    <div class="card-body">
+                        <h5 class="category">Nissan Moco</h5>
+                        <p class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </p>
+                        <p class="para">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos eos at eum, voluptatem quibusdam.</p>
+                        <a href="#" class="btn btn-rent">Rent Now</a> 
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="./images/car_2.jpg.webp" class="card-img-top">
+                    <div class="para p-2">$389.00/day</div>
+                    <div class="card-body">
+                        <h5 class="category">Honda Fitta</h5>
+                        <p class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </p>
+                        <p class="para">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos eos at eum, voluptatem quibusdam.</p>
+                        <a href="#" class="btn btn-rent">Rent Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="./images/car_3.jpg.webp" class="card-img-top" >
+                    <div class="para p-2">$389.00/day</div>
+                    <div class="card-body">
+                        <h5 class="category">Skoda Laura</h5>
+                        <p class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </p>
+                        <p class="para">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos eos at eum, voluptatem quibusdam.</p>
+                        <a href="#" class="btn btn-rent">Rent Now</a> 
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="./images/car_4.jpg.webp" class="card-img-top">
+                    <div class="para p-2">$389.00/day</div>
+                    <div class="card-body">
+                        <h5 class="category">Mazda LaPuta</h5>
+                        <p class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </p>
+                        <p class="para">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos eos at eum, voluptatem quibusdam.</p>
+                        <a href="#" class="btn btn-rent">Rent Now</a> 
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="./images/car_5.jpg.webp" class="card-img-top">
+                    <div class="para p-2">$389.00/day</div>
+                    <div class="card-body">
+                        <h5 class="category">Buick LaCrosse</h5>
+                        <p class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </p>
+                        <p class="para">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos eos at eum, voluptatem quibusdam.</p>
+                        <a href="#" class="btn btn-rent">Rent Now</a> 
+                    </div>
+                </div>
+            </div>        
+            </div>
+        </div>
+    </div>
+
+    <section class="academics-section text-center py-5">
+        <div class="container">
+            <h2 class="section-title">Features</h2>
+            <p class="para">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            <div class="row mt-4 p-5">
+                <div class="col-md-4 p-4">
+                    <div class="cards shadow-sm p-4">
+                        <div class="icon-box">
+                            <i class="fa-solid fa-graduation-cap"></i>
+                        </div>
+                        <h4 class="mt-3">Lorem ipsum dolor</h4>
+                        <p class="para">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati, laboriosam.</p>
+                        <a href="#" class="btn btn-learn">Learn More</a>
+                    </div>
+                </div>
+                <div class="col-md-4 p-4">
+                    <div class="cards shadow-sm p-4">
+                        <div class="icon-box">
+                            <i class="fa-solid fa-graduation-cap"></i>
+                        </div>
+                        <h4 class="mt-3">Lorem ipsum dolor</h4>
+                        <p class="para">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati, laboriosam.</p>
+                        <a href="#" class="btn btn-learn">Learn More</a>
+                    </div>
+                </div>
+                <div class="col-md-4 p-4">
+                    <div class="cards shadow-sm p-4">
+                        <div class="icon-box">
+                            <i class="fa-solid fa-graduation-cap"></i>
+                        </div>
+                        <h4 class="mt-3">Lorem ipsum dolor</h4>
+                        <p class="para">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati, laboriosam.</p>
+                        <a href="#" class="btn btn-learn">Learn More</a>
+                    </div>
+                </div>
+                <div class="col-md-4 p-4">
+                    <div class="cards shadow-sm p-4">
+                        <div class="icon-box">
+                            <i class="fa-solid fa-graduation-cap"></i>
+                        </div>
+                        <h4 class="mt-3">Lorem ipsum dolor</h4>
+                        <p class="para">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati, laboriosam.</p>
+                        <a href="#" class="btn btn-learn">Learn More</a>
+                    </div>
+                </div>
+                <div class="col-md-4 p-4">
+                    <div class="cards shadow-sm p-4">
+                        <div class="icon-box">
+                            <i class="fa-solid fa-graduation-cap"></i>
+                        </div>
+                        <h4 class="mt-3">Lorem ipsum dolor</h4>
+                        <p class="para">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati, laboriosam.</p>
+                        <a href="#" class="btn btn-learn">Learn More</a>
+                    </div>
+                </div>
+                <div class="col-md-4 p-4">
+                    <div class="cards shadow-sm p-4">
+                        <div class="icon-box">
+                            <i class="fa-solid fa-graduation-cap"></i>
+                        </div>
+                        <h4 class="mt-3">Lorem ipsum dolor</h4>
+                        <p class="para">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati, laboriosam.</p>
+                        <a href="#" class="btn btn-learn">Learn More</a>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+ <!-- Testimonals Section -->
+
+    <section class="testimonials text-center">
+    <div class="testimonials-container">
+        <h2 class="section-title-testimonials">Testimonials</h2>
+        <p class="para">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+        <div class="underline-testimonials"></div>
+        
+        <div class="row justify-content-center">
+            <div class="col-md-3 testimonial-box">
+                <div class="testimonial">
+                    <img src="./images/person_1.jpg.webp" alt="Allison Holmes" class="testimonial-img">
+                    <h5 class="name-testimonials">Mike Fisher</h5>
+                    <p class="designation-testimonials">Owner, Ford</p>
+                    <p class="para">"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem, deserunt eveniet veniam. Ipsam, nam, voluptatum"</p>
+                </div>
+            </div>
+            
+            <div class="col-md-3 testimonial-box">
+                <div class="testimonial">
+                    <img src="./images/person_2.jpg.webp" alt="Allison Holmes" class="testimonial-img">
+                    <h5 class="name-testimonials">Jean Stanley</h5>
+                    <p class="designation-testimonials">Traveler</p>
+                    <p class="para">"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem, deserunt eveniet veniam. Ipsam, nam, voluptatum"</p>
+                </div>
+            </div>
+
+            <div class="col-md-3 testimonial-box">
+                <div class="testimonial">
+                    <img src="./images/person_3.jpg.webp" alt="Allison Holmes" class="testimonial-img">
+                    <h5 class="name-testimonials">Katie Rose</h5>
+                    <p class="designation-testimonials">Customer</p>
+                    <p class="para">"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem, deserunt eveniet veniam. Ipsam, nam, voluptatum"</p>
+                </div>
+            </div>
+        </div>
+        
+     <!--Footer Top-->
+
+        <div class="footer-section">
+        
+        </div>
+
+
+
+
+
+
+     <!-- Bootstrap -->
+     <script
+     src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+     crossorigin="anonymous"
+   ></script>
+   <script
+     src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+     integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+     crossorigin="anonymous"
+   ></script>
+   <script
+     src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+     integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+     crossorigin="anonymous"
+   ></script>
+</body>
+</html>

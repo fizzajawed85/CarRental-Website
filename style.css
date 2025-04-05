@@ -1,0 +1,397 @@
+.nav-logo{
+    font-weight: 900;
+    color: #000;
+    font-size: 1.7rem;
+}
+
+.navbar-nav {
+    display: flex;
+    align-items: end;
+    justify-content: flex-end;
+    gap: 15px;
+}
+
+.navbar-nav .nav-link {
+    color: rgba(0, 0, 0, 0.7); ;
+    font-size: 16px;
+    font-weight: 400;
+    margin-right: 10px;
+}
+
+.hero-bg{
+    background-image: url(./images/hero_1_a.jpg.webp);
+    height: 90vh;
+    position: relative;
+    background-size: cover;
+}
+
+.mb-5 {
+    margin-bottom: 6rem !important;
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -15px;
+    margin-right: -15px;
+}
+
+.hero .intro {
+    position: relative;
+    z-index: 4;
+}
+
+.hero .intro h1 {
+    color: #000;
+    font-size: 0.2rem;
+}
+
+.h1{
+    /* font-weight: 100; */
+    color: #364d59;
+}
+
+.hero .intro strong {
+    font-weight: 900;
+}
+
+.trip-form {
+    border-radius: 7px;
+    padding: 40px;
+    background: #fff;
+    position: relative;
+    z-index: 3;
+    box-shadow: 0 15px 30px 0px rgba(0, 0, 0, 0.1);
+}
+
+.custom-select {
+    display: inline-block;
+    width: 100%;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #495057;
+    vertical-align: middle;
+    background-color: #fff;
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+
+}
+
+.works-section {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.section-title {
+    font-weight: 500;
+    font-size: 2rem;
+    position: relative;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+.section-title::after {
+    content: "";
+    display: block;
+    width: 50px;
+    height: 3px;
+    background-color:   rgb(62, 62, 222);
+    margin: 5px auto 0;
+}
+
+.cards {
+    border: none;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.cards:hover {
+    transform: translateY(-5px);
+}
+
+.mt-3{
+    color: #495057;
+}
+
+.clor{
+    color: rgb(62, 62, 222);
+}
+
+.para{
+    color: #b1adad;
+}
+
+
+.meet-section {
+    width: 100%;
+    height: 100vh;
+    background-color: #fff;
+    padding-left: 20px;
+    padding-top: 40px;
+    
+}
+
+.about-container {
+  width: 80%;
+  display: block;
+  margin: auto;
+  padding-top: 20px;
+}
+
+.content-section {
+    float: left;
+    width: 55%;
+    padding-top: 80px;
+    padding-left: 20px;
+}
+
+.image-section {
+    float:right;
+    width: 40%;
+}
+
+.image-section img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.content-section .title {
+    text-transform: uppercase;
+    font-size: 10px;
+}
+
+.content-section .content h1 {
+    margin-top: 20px;
+    color: #5d5d5d;
+    font-size: 10px;
+}
+
+.content-section .content p {
+   margin-top: 10px;
+   font-family: sans-serif;
+   font-size: 16px;
+   line-height: 1.5;
+}
+.content-section .content .button {
+   margin-top: 30px;
+}
+.content-section .content .button a {
+    background-color: #007bff;
+    padding: 10px 20px;
+    text-decoration: none;
+    color:#fff;
+    font-size: 18px;
+    letter-spacing: 1.5px;
+    border-radius: 10px ;
+}
+
+.content-section .content .button a:hover{
+    background-color: #333;
+    color:#fff;
+}
+
+.section-title {
+    font-weight: 900;
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.section-title::after {
+    content: "";
+    display: block;
+    width: 50px;
+    height: 3px;
+    background-color: #007bff;
+    /* margin: 5px auto 0; */
+}
+
+.section-description {
+    color: #7a7a7a;
+    font-size: 1rem;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card {
+    border-radius: none;
+    overflow: hidden;
+    box-shadow: 0px 4px 10px #c7c7c8;
+    position: relative;
+    transition: 0.3s;
+    margin-bottom: 30px;
+}
+.card:hover {
+    transform: translateY(-5px);
+}
+.card img {
+    height: 200px;
+    object-fit: cover;
+}
+.card-body {
+    text-align: center;
+}
+.category {
+    background-color: #007bff;
+    color: white;
+    padding: 10px;
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+.card-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+.stars {
+    color: #ffcc00;
+    margin-bottom: 10px;
+}
+.card-text {
+    color: #6c757d;
+}
+
+.bttn {
+    background-color: #007bff;
+    padding: 10px 30px;
+    text-decoration: none; 
+    color:#fff;
+    font-size: 18px;
+}
+
+.bttn a:hover{
+    background-color: #818487;
+}
+
+.btn-rent {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 10px;
+    transition: background 0.3s;
+}
+
+.btn-rent:hover {
+    background-color: #b7cfe9;
+}
+
+.section-title {
+    font-weight: 500;
+    font-size: 2rem;
+    position: relative;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+.section-title::after {
+    content: "";
+    display: block;
+    width: 50px;
+    height: 3px;
+    background-color: #007bff;
+    margin: 5px auto 0;
+}
+
+.cards {
+    border: none;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.cards:hover {
+    transform: translateY(-5px);
+}
+
+.icon-box {
+    width: 80px;
+    height: 80px;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    margin: 0 auto;
+    color: #000;
+    font-size: 2rem;
+}
+
+.btn-learn {
+    color: #007bff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 10px;
+    transition: background 0.3s;
+}
+
+.btn-learn:hover {
+    background-color: #b7cfe9;
+}
+
+.testimonials-container{
+    background-color: #ffffff;
+    color: #333;
+    text-align: center;
+}
+
+.testimonials {
+    padding: 60px 0;
+}
+
+.section-title {
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.underline-testimonials {
+    width: 100px;
+    height: 3px;
+    background-color: #007bff;
+    margin: 10px auto 30px;
+}
+
+.testimonial-box {
+    background: #fff;
+    padding: 20px;
+    margin: 20px;
+    align-items: start;
+}
+
+.testimonial {
+    text-align: center;
+}
+
+.testimonial-img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+
+.name-testimonials {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #000;
+    margin: 5px 0;
+}
+
+.designation-testimonials {
+    font-size: 1rem;
+    color: #6fa4e0;
+}
+
+.text-testimonials {
+    font-size: 0.95rem;
+    color: gray;
+    align-self: start;
+}
+
