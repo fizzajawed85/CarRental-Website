@@ -28,375 +28,453 @@
     <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <nav class="navbar navbar-expand-sm navbar-dark text-bg-light">
-        <h1 class="nav-logo p-4"><strong>CarRental</strong></h1>
-        <button
-            class="navbar-toggler d-lg-none"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#collapsibleNavId"
-            aria-controls="collapsibleNavId"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-        ></button>
-        <div class="collapse navbar-collapse" id="collapsibleNavId">
-            <ul class="navbar-nav ms-auto"> 
-                <li class="nav-item">
-                    <a class="nav-link active" href="#">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Listing</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Testimonals</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Blog</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">About</a>
-                </li> 
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Contact</a>
-                </li>  
-            </ul>
-        </div>
-    </nav>
     
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg">
+    <div class="container">
+      <a class="nav-logo navbar-brand" href="#">CarRental</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Listing</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Testimonials</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Blog</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+     </nav>
+
+    <!-- Hero Section -->
     <section class="hero-bg">
-        <div class="container">
-            <div class="row align-items-center justify-content-center">
-                <div class="col-lg-10">
-                    <div class="row mb-5">
-                        <div class="col-lg-7 intro">
-                            <h1>
-                                <strong>Rent a Car</strong>
-                                is within your finger tips
-                            </h1>
-                        </div>
-                    </div>
-                </div>
-                <form class="tripform">
-                <div class="row align-item-center background">
-                    <div class="mb-3 mb-md-0 col-md-3 ">
-                        <select name="" id="" class="custom-select form-control">
-                            <option value="">Select Type <i class="fa-solid fa-caret-down"></i></option>
-                            <option value="">Ferrari</option>
-                            <option value="">Toyota</option>
-                            <option value="">Ford</option>
-                            <option value="">Lamborghini</option>
-                        </select>
-                    </div>
-                    <div class="mb-3 mb-md-0 col-md-3">
-                        <div class="form-control-wrap">
-                          <input type="text" id="cf-3" placeholder="Pick up" class="form-control datepicker px-3">
-                          <span class="icon icon-date_range"></span>
-    
-                        </div>
-                      </div>
-                      <div class="mb-3 mb-md-0 col-md-3">
-                        <div class="form-control-wrap">
-                          <input type="text" id="cf-3" placeholder="Drop off" class="form-control datepicker px-3">
-                          <span class="icon icon-date_range"></span>
-    
-                        </div>
-                      </div>
-                      <div class="mb-3 mb-md-0 col-md-3">
-                      <input type="submit" value="Search Now" class="btn btn-primary btn-block py-3">
-                    </div>
-                </div>
-                </form>
+    <div class="container">
+      <div class="row justify-content-center ">
+        <div class="col-lg-10">
+          <div class="intro mb-4">
+            <h1 class="pt"><strong>Rent a Car</strong> <br> is within your finger tips</h1>
+          </div>
+          <form class="trip-form">
+            <div class="row g-3">
+              <div class="col-md-3 input-icon">
+                <select class="form-select">
+                  <option selected>Select Type</option>
+                  <option value="Ferrari">Ferrari</option>
+                  <option value="Toyota">Toyota</option>
+                  <option value="Ford">Ford</option>
+                  <option value="Lamborghini">Lamborghini</option>
+                </select>
+              </div>
+              <div class="col-md-3 input-icon">
+                <input type="text" class="form-control" placeholder="Pick up">
+                <i class="fa-solid fa-calendar-days"></i>
+              </div>
+              <div class="col-md-3 input-icon">
+                <input type="text" class="form-control" placeholder="Drop off">
+                <i class="fa-solid fa-calendar-days"></i>
+              </div>
+              <div class="col-md-3">
+                <input type="submit" class="btn btn-primary w-100 " value="Search Now">
+              </div>
             </div>
+          </form>
         </div>
-    </section>
+      </div>
+    </div>
+     </section>
 
      <!--Works Section-->
 
-    <section class="works-section text-center py-5">
-        <div class="container">
-            <h2 class="section-title">How it Works?</h2>
-            <p class="para">Easy steps to get you started</p>
-            <div class="row mt-4">
-                <div class="col-md-4">
-                    <div class="cards shadow-sm p-4">
-                        <h1 class="mt-3 clor">01</h1>
-                        <h4 class="mt-3">Select a car</h4>
-                        <p class="para">Lorem ipsum dolor sit amet, consectetur adipiscing elit morbi hendrerit elit.</p>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="cards shadow-sm p-4">
-                        <h1 class="mt-3 clor">02</h1>
-                        <h4 class="mt-3">Select a car</h4>
-                        <p class="para">Lorem ipsum dolor sit amet, consectetur adipiscing elit morbi hendrerit elit.</p>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="cards shadow-sm p-4">
-                        <h1 class="mt-3 clor">03</h1>
-                        <h4 class="mt-3">Select a car</h4>
-                        <p class="para">Lorem ipsum dolor sit amet, consectetur adipiscing elit morbi hendrerit elit.</p>
-                    </div>
-                </div>
-                
+     <div class="container py-5">
+        <div class="text-start mb-5">
+          <h2 class="fw-bold">How it works?</h2>
+          <p class="para">Easy steps to get you started</p>
         </div>
-    </section>
-
-     <!--MeetUs Section-->
-
-     <div class="meet-section p-4">
-        <div class="meet-container">
-            <div class="content-section">
-                <div class="title">
-                    <h1>You can easily avail our promo for renting a car.</h1>
-                </div>
-                <div class="content">
-                   <p class="para">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae, explicabo iste a labore id est quas, doloremque veritatis! Provident odit pariatur dolorem quisquam, voluptatibus voluptates optio accusamus, vel quasi quidem!</p>
-                    <div class="button">
-                        <a href="#">Meet them now</a>
-                    </div>
-                </div>
+      
+        <div class="row g-4">
+          <div class="col-md-4">
+            <div class="step-box">
+              <div class="step-number">1</div>
+              <div class="step-content">
+                <h6>01.</h6>
+                <h5>Select a car</h5>
+                <p class="para">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero, laboriosam!</p>
+              </div>
             </div>
-            <div class="image-section">
-                <img src="./images/feature_01.png.webp" alt="">
+          </div>
+          <div class="col-md-4">
+            <div class="step-box">
+              <div class="step-number">2</div>
+              <div class="step-content">
+                <h6>02.</h6>
+                <h5>Fill up form</h5>
+                <p class="para">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero, laboriosam!</p>
+              </div>
             </div>
+          </div>
+          <div class="col-md-4">
+            <div class="step-box">
+              <div class="step-number">3</div>
+              <div class="step-content">
+                <h6>03.</h6>
+                <h5>Payment</h5>
+                <p class="para">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero, laboriosam!</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      
+        <div class="d-flex align-items-center mt-5">
+          <div class="play-icon">
+            <i class="fas fa-play"></i>
+          </div>
+          <a href="#" class="video-link">Video how it works</a>
         </div>
       </div>
+      
+
+     <!--Promo Section-->
+
+     <section class="promo-section mt-5">
+        <div class="container">
+          <div class="row align-items-center">
+
+            <!-- Text Column -->
+            <div class="col-lg-6 mb-4 mb-lg-0 promo-text">
+              <h2 class="fw-bold">You can easily avail our <br> promo for renting a car.</h2>
+              <p class="mt-4">
+                Lorem ipsum dolor sit amet, consectetur adipisicing<br> elit. Repudiandae, explicabo iste a labore id est <br> quas, doloremque veritatis! Provident odit pariatur <br> dolorem quisquam, voluptatibus voluptates optio <br> accusamus, vel quasi quidem!
+              </p>
+              <a href="#" class="btn btn-custom mt-3 px-4 py-2">Meet them now</a>
+            </div>
+      
+            <!-- Image Column -->
+            <div class="col-lg-6 text-center">
+              <img src="./images/feature_01.png.webp" alt="Happy customer in car" class="promo-img">
+            </div>
+          </div>
+        </div>
+      </section>
 
        <!--Cars Section-->
 
-    <section class="container mt-5 mb-5 pt-5 pb-5">
-        <h2 class="section-title">Car Listings</h2>
-        <p class="para">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-    </section>
+    <section class="features-section mt-5 mb-5 bg-light">
+        <div class="container text-left">
+          <h2 class="fw-bold text-dark mb-3">Car Listings</h2>
+          <p class="mb-5 para">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+          <div class="row g-4">
+            <!-- Card 1 -->
+            <div class="col-md-4">
+              <div class="card bg-white">
+                <img src="./images/car_1.jpg.webp" class="card-img-top" alt="Skoda Laura">
+                <div class="card-body">
+                  <h5 class="card-title fw-bold">Mitsubishi Pajero</h5>
+                  <p><span class="price fw-semibold">$389.00</span> <span class="para">/ day</span></p>
+                  <div class="d-flex justify-content-between mb-2 para">
+                    <div>Luggage: <br> 8</div>
+                    <div>Doors: <br> 4</div>
+                    <div>Passenger: <br> 4</div>
+                  </div>
+                  <p class="para">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos eos at eum.</p>
+                  <a href="#" class="btn btn-rent mt-2 w-50">Rent Now</a>
+                </div>
+              </div>
+            </div>
+      
+            <!-- Card 2 -->
+            <div class="col-md-4">
+              <div class="card bg-white">
+                <img src="./images/car_2.jpg.webp" class="card-img-top" alt="Mazda LaPuta">
+                <div class="card-body">
+                  <h5 class="card-title fw-bold">Nissan Moco</h5>
+                  <p><span class="price fw-semibold">$389.00</span> <span class="para">/ day</span></p>
+                  <div class="d-flex justify-content-between mb-2 para">
+                    <div>Luggage: <br> 8</div>
+                    <div>Doors: <br> 4</div>
+                    <div>Passenger: <br> 4</div>
+                  </div>
+                  <p class="para">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos eos at eum.</p>
+                  <a href="#" class="btn btn-rent mt-2 w-50">Rent Now</a>
+                </div>
+              </div>
+            </div>
+      
+            <!-- Card 3 -->
+            <div class="col-md-4">
+              <div class="card bg-white">
+                <img src="./images/car_3.jpg.webp" class="card-img-top" alt="Buick LaCrosse">
+                <div class="card-body">
+                  <h5 class="card-title fw-bold">Honda Fitta</h5>
+                  <p><span class="price fw-semibold">$389.00</span> <span class="para">/ day</span></p>
+                  <div class="d-flex justify-content-between mb-2 para">
+                    <div>Luggage: <br> 8</div>
+                    <div>Doors: <br> 4</div>
+                    <div>Passenger: <br> 4</div>
+                  </div>
+                  <p class="para">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos eos at eum.</p>
+                  <a href="#" class="btn btn-rent mt-2 w-50">Rent Now</a>
+                </div>
+              </div>
+            </div>
 
-    <div class="container mt-5 bg">
-        <div class="row">
-            <div class="col-md-4">
-                <div class="card">
-                    <img src="./images/car_1.jpg.webp" class="card-img-top">
-                    <div class="para p-2">$389.00/day</div>
-                    <div class="card-body">
-                        <h5 class="category">Mitsubishi Pajero</h5>
-                        <p class="stars">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                        </p>
-                        <p class="para">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos eos at eum, voluptatem quibusdam.</p>  
-                        <a href="#" class="btn btn-rent">Rent Now</a>
-                    </div>
+             <!-- Card 4 -->
+             <div class="col-md-4">
+                <div class="card bg-white">
+                  <img src="./images/car_4.jpg.webp" class="card-img-top" alt="Skoda Laura">
+                  <div class="card-body">
+                    <h5 class="card-title fw-bold">Skoda Laura</h5>
+                    <p><span class="price fw-semibold">$389.00</span> <span class="para">/ day</span></p>
+                    <div class="d-flex justify-content-between mb-2 para">
+                        <div>Luggage: <br> 8</div>
+                        <div>Doors: <br> 4</div>
+                        <div>Passenger: <br> 4</div>
+                      </div>
+                    <p class="para">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos eos at eum.</p>
+                    <a href="#" class="btn btn-rent mt-2 w-50">Rent Now</a>
+                  </div>
                 </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card">
-                    <img src="./images/car_6.jpg.webp" class="card-img-top" >
-                    <div class="para p-2">$389.00/day</div>
-                    <div class="card-body">
-                        <h5 class="category">Nissan Moco</h5>
-                        <p class="stars">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                        </p>
-                        <p class="para">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos eos at eum, voluptatem quibusdam.</p>
-                        <a href="#" class="btn btn-rent">Rent Now</a> 
-                    </div>
+              </div>
+        
+              <!-- Card 5 -->
+              <div class="col-md-4">
+                <div class="card bg-white">
+                  <img src="./images/car_5.jpg.webp" class="card-img-top" alt="Mazda LaPuta">
+                  <div class="card-body">
+                    <h5 class="card-title fw-bold">Mazda LaPuta</h5>
+                    <p><span class="price fw-semibold">$389.00</span> <span class="para">/ day</span></p>
+                    <div class="d-flex justify-content-between mb-2 para">
+                        <div>Luggage: <br> 8</div>
+                        <div>Doors: <br> 4</div>
+                        <div>Passenger: <br> 4</div>
+                      </div>
+                    <p class="para">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos eos at eum.</p>
+                    <a href="#" class="btn btn-rent mt-2 w-50">Rent Now</a>
+                  </div>
                 </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card">
-                    <img src="./images/car_2.jpg.webp" class="card-img-top">
-                    <div class="para p-2">$389.00/day</div>
-                    <div class="card-body">
-                        <h5 class="category">Honda Fitta</h5>
-                        <p class="stars">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                        </p>
-                        <p class="para">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos eos at eum, voluptatem quibusdam.</p>
-                        <a href="#" class="btn btn-rent">Rent Now</a>
-                    </div>
+              </div>
+        
+              <!-- Card 6 -->
+              <div class="col-md-4">
+                <div class="card bg-white">
+                  <img src="./images/car_6.jpg.webp" class="card-img-top" alt="Buick LaCrosse">
+                  <div class="card-body">
+                    <h5 class="card-title fw-bold">Buick LaCrosse</h5>
+                    <p><span class="price fw-semibold">$389.00</span> <span class="para">/ day</span></p>
+                    <div class="d-flex justify-content-between mb-2 para">
+                        <div>Luggage: <br> 8</div>
+                        <div>Doors: <br> 4</div>
+                        <div>Passenger: <br> 4</div>
+                      </div>
+                    <p class="para">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos eos at eum.</p>
+                    <a href="#" class="btn btn-rent mt-2 w-50">Rent Now</a>
+                  </div>
                 </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card">
-                    <img src="./images/car_3.jpg.webp" class="card-img-top" >
-                    <div class="para p-2">$389.00/day</div>
-                    <div class="card-body">
-                        <h5 class="category">Skoda Laura</h5>
-                        <p class="stars">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                        </p>
-                        <p class="para">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos eos at eum, voluptatem quibusdam.</p>
-                        <a href="#" class="btn btn-rent">Rent Now</a> 
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card">
-                    <img src="./images/car_4.jpg.webp" class="card-img-top">
-                    <div class="para p-2">$389.00/day</div>
-                    <div class="card-body">
-                        <h5 class="category">Mazda LaPuta</h5>
-                        <p class="stars">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                        </p>
-                        <p class="para">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos eos at eum, voluptatem quibusdam.</p>
-                        <a href="#" class="btn btn-rent">Rent Now</a> 
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card">
-                    <img src="./images/car_5.jpg.webp" class="card-img-top">
-                    <div class="para p-2">$389.00/day</div>
-                    <div class="card-body">
-                        <h5 class="category">Buick LaCrosse</h5>
-                        <p class="stars">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                        </p>
-                        <p class="para">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos eos at eum, voluptatem quibusdam.</p>
-                        <a href="#" class="btn btn-rent">Rent Now</a> 
-                    </div>
-                </div>
-            </div>        
-            </div>
+              </div>
+      
+          </div>
         </div>
+      </section>
+
+     <!-- Features -->
+
+    <section class="features-section m-5">
+        <div class="container text-left">
+          <h2 class="fw-bold text-dark mb-3">Features</h2>
+          <p class="mb-5 para">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+          <div class="row g-4">
+            <!-- Feature 1 -->
+            <div class="col-md-4">
+              <div class="feature-icon">
+                <i class="fas fa-home"></i>
+              </div>
+              <h5 class="text-dark fw-lighter">Lorem ipsum dolor</h5>
+              <p class="para">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati, laboriosam.</p>
+              <a href="#" class="learn-more">Learn more</a>
+            </div>
+      
+            <!-- Feature 2 -->
+            <div class="col-md-4">
+              <div class="feature-icon">
+                <i class="fas fa-cog"></i>
+              </div>
+              <h5 class="text-dark fw-lighter">Lorem ipsum dolor</h5>
+              <p class="para">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati, laboriosam.</p>
+              <a href="#" class="learn-more">Learn more</a>
+            </div>
+      
+            <!-- Feature 3 -->
+            <div class="col-md-4">
+              <div class="feature-icon">
+                <i class="fas fa-clock"></i>
+              </div>
+              <h5 class="text-dark fw-lighter">Lorem ipsum dolor</h5>
+              <p class="para">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati, laboriosam.</p>
+              <a href="#" class="learn-more">Learn more</a>
+            </div>
+
+             <!-- Feature 4 -->
+             <div class="col-md-4">
+                <div class="feature-icon">
+                    <i class="fas fa-shield-halved"></i>
+                </div>
+                <h5 class="text-dark fw-lighter">Lorem ipsum dolor</h5>
+                <p class="para">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati, laboriosam.</p>
+                <a href="#" class="learn-more">Learn more</a>
+              </div>
+        
+              <!-- Feature 5 -->
+              <div class="col-md-4">
+                <div class="feature-icon">
+                    <i class="fas fa-clone"></i>
+                </div>
+                <h5 class="text-dark fw-lighter">Lorem ipsum dolor</h5>
+                <p class="para">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati, laboriosam.</p>
+                <a href="#" class="learn-more">Learn more</a>
+              </div>
+        
+              <!-- Feature 6 -->
+              <div class="col-md-4">
+                <div class="feature-icon">
+                    <i class="fas fa-key"></i>
+                </div>
+                <h5 class="text-dark fw-lighter">Lorem ipsum dolor</h5>
+                <p class="para">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati, laboriosam.</p>
+                <a href="#" class="learn-more">Learn more</a>
+              </div>
+          </div>
+        </div>
+      </section>
+
+
+    <!-- Testimonals Section -->
+
+    <div class="container py-5  mt-5 mb-5 bg-light">
+    <div class="text-left mb-5">
+      <h2 class="fw-bold">Testimonials</h2>
+      <p class="para">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
     </div>
-
-    <section class="academics-section text-center py-5">
-        <div class="container">
-            <h2 class="section-title">Features</h2>
-            <p class="para">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-            <div class="row mt-4 p-5">
-                <div class="col-md-4 p-4">
-                    <div class="cards shadow-sm p-4">
-                        <div class="icon-box">
-                            <i class="fa-solid fa-graduation-cap"></i>
-                        </div>
-                        <h4 class="mt-3">Lorem ipsum dolor</h4>
-                        <p class="para">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati, laboriosam.</p>
-                        <a href="#" class="btn btn-learn">Learn More</a>
-                    </div>
-                </div>
-                <div class="col-md-4 p-4">
-                    <div class="cards shadow-sm p-4">
-                        <div class="icon-box">
-                            <i class="fa-solid fa-graduation-cap"></i>
-                        </div>
-                        <h4 class="mt-3">Lorem ipsum dolor</h4>
-                        <p class="para">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati, laboriosam.</p>
-                        <a href="#" class="btn btn-learn">Learn More</a>
-                    </div>
-                </div>
-                <div class="col-md-4 p-4">
-                    <div class="cards shadow-sm p-4">
-                        <div class="icon-box">
-                            <i class="fa-solid fa-graduation-cap"></i>
-                        </div>
-                        <h4 class="mt-3">Lorem ipsum dolor</h4>
-                        <p class="para">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati, laboriosam.</p>
-                        <a href="#" class="btn btn-learn">Learn More</a>
-                    </div>
-                </div>
-                <div class="col-md-4 p-4">
-                    <div class="cards shadow-sm p-4">
-                        <div class="icon-box">
-                            <i class="fa-solid fa-graduation-cap"></i>
-                        </div>
-                        <h4 class="mt-3">Lorem ipsum dolor</h4>
-                        <p class="para">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati, laboriosam.</p>
-                        <a href="#" class="btn btn-learn">Learn More</a>
-                    </div>
-                </div>
-                <div class="col-md-4 p-4">
-                    <div class="cards shadow-sm p-4">
-                        <div class="icon-box">
-                            <i class="fa-solid fa-graduation-cap"></i>
-                        </div>
-                        <h4 class="mt-3">Lorem ipsum dolor</h4>
-                        <p class="para">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati, laboriosam.</p>
-                        <a href="#" class="btn btn-learn">Learn More</a>
-                    </div>
-                </div>
-                <div class="col-md-4 p-4">
-                    <div class="cards shadow-sm p-4">
-                        <div class="icon-box">
-                            <i class="fa-solid fa-graduation-cap"></i>
-                        </div>
-                        <h4 class="mt-3">Lorem ipsum dolor</h4>
-                        <p class="para">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati, laboriosam.</p>
-                        <a href="#" class="btn btn-learn">Learn More</a>
-                    </div>
-                </div>
-                </div>
+  
+    <div class="row g-4">
+      <div class="col-md-4">
+        <div class="testimonial-cardss h-100">
+          <p class="testimonial-text">"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem, deserunt eveniet veniam. Ipsam, nam, voluptatum"</p>
+          <div class="testimonial-footer">
+            <img src="./images/person_1.jpg.webp" alt="Mike Fisher">
+            <div>
+              <h6>Mike Fisher</h6>
+              <small>Owner, Ford</small>
             </div>
+          </div>
         </div>
-    </section>
-
-
- <!-- Testimonals Section -->
-
-    <section class="testimonials text-center">
-    <div class="testimonials-container">
-        <h2 class="section-title-testimonials">Testimonials</h2>
-        <p class="para">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-        <div class="underline-testimonials"></div>
-        
-        <div class="row justify-content-center">
-            <div class="col-md-3 testimonial-box">
-                <div class="testimonial">
-                    <img src="./images/person_1.jpg.webp" alt="Allison Holmes" class="testimonial-img">
-                    <h5 class="name-testimonials">Mike Fisher</h5>
-                    <p class="designation-testimonials">Owner, Ford</p>
-                    <p class="para">"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem, deserunt eveniet veniam. Ipsam, nam, voluptatum"</p>
-                </div>
+      </div>
+      <div class="col-md-4">
+        <div class="testimonial-cardss h-100">
+          <p class="testimonial-text">"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem, deserunt eveniet veniam. Ipsam, nam, voluptatum"</p>
+          <div class="testimonial-footer">
+            <img src="./images/person_2.jpg.webp" alt="Jean Stanley">
+            <div>
+              <h6>Jean Stanley</h6>
+              <small>Traveler</small>
             </div>
-            
-            <div class="col-md-3 testimonial-box">
-                <div class="testimonial">
-                    <img src="./images/person_2.jpg.webp" alt="Allison Holmes" class="testimonial-img">
-                    <h5 class="name-testimonials">Jean Stanley</h5>
-                    <p class="designation-testimonials">Traveler</p>
-                    <p class="para">"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem, deserunt eveniet veniam. Ipsam, nam, voluptatum"</p>
-                </div>
-            </div>
-
-            <div class="col-md-3 testimonial-box">
-                <div class="testimonial">
-                    <img src="./images/person_3.jpg.webp" alt="Allison Holmes" class="testimonial-img">
-                    <h5 class="name-testimonials">Katie Rose</h5>
-                    <p class="designation-testimonials">Customer</p>
-                    <p class="para">"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem, deserunt eveniet veniam. Ipsam, nam, voluptatum"</p>
-                </div>
-            </div>
+          </div>
         </div>
-        
+      </div>
+      <div class="col-md-4">
+        <div class="testimonial-cardss h-100">
+          <p class="testimonial-text">"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem, deserunt eveniet veniam. Ipsam, nam, voluptatum"</p>
+          <div class="testimonial-footer">
+            <img src="./images/person_3.jpg.webp" alt="Katie Rose">
+            <div>
+              <h6>Katie Rose</h6>
+              <small>Customer</small>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+      </div>
+ 
      <!--Footer Top-->
-
-        <div class="footer-section">
-        
+     <div class="footer-top text-center text-md-start">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-md-8 mb-4 mb-md-0">
+              <h2 class="fw-light">What are you waiting for?</h2>
+              <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati, laboriosam.</p>
+            </div>
+            <div class="col-md-4 text-md-end">
+              <a href="#" class="footer-btn">Rent a car now</a>
+            </div>
+          </div>
         </div>
+      </div>
+
+    <!--Footer -->
+
+    <footer class="footer">
+        <div class="container">
+          <div class="row">
+            <!-- About Us -->
+            <div class="col-md-3 mb-4 text-start">
+              <h5 class="texts">About Us</h5>
+              <p class="about-text">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+              <div class="social-icons mt-3">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+              </div>
+            </div>
+      
+            <!-- Footer Columns -->
+            <div class="col-md-2 mb-4 footer-link text-start">
+              <h5 class="texts">Quick Links</h5>
+              <a href="#">About Us</a>
+              <a href="#">Testimonials</a>
+              <a href="#">Terms of Service</a>
+              <a href="#">Privacy</a>
+              <a href="#">Contact Us</a>
+            </div>
+      
+            <div class="col-md-2 mb-4 footer-link text-start">
+              <h5 class="texts">Resources</h5>
+              <a href="#">About Us</a>
+              <a href="#">Testimonials</a>
+              <a href="#">Terms of Service</a>
+              <a href="#">Privacy</a>
+              <a href="#">Contact Us</a>
+            </div>
+      
+            <div class="col-md-2 mb-4 footer-link text-start">
+              <h5 class="texts">Support</h5>
+              <a href="#">About Us</a>
+              <a href="#">Testimonials</a>
+              <a href="#">Terms of Service</a>
+              <a href="#">Privacy</a>
+              <a href="#">Contact Us</a>
+            </div>
+      
+            <div class="col-md-2 mb-4 footer-link text-start">
+              <h5 class="texts">Company</h5>
+              <a href="#">About Us</a>
+              <a href="#">Testimonials</a>
+              <a href="#">Terms of Service</a>
+              <a href="#">Privacy</a>
+              <a href="#">Contact Us</a>
+            </div>
+          </div>
+      
+          <!-- Footer Bottom -->
+          <div class="footer-bottom mt-4">
+            <p>Copyright &copy;2025 All rights reserved | This template is made with <i class="fas fa-heart"></i> by Colorlib</p>
+          </div>
+        </div>
+      </footer>
+    
+    
 
 
 
@@ -421,3 +499,4 @@
    ></script>
 </body>
 </html>
+
